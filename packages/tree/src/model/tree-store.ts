@@ -41,7 +41,9 @@ export default class TreeStore {
     }
 
     this.nodesMap = {}
+  }
 
+  initialize(store) {
     this.root = new Node({
       data: this.data,
       store: this,
